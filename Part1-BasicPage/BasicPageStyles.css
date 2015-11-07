@@ -1,0 +1,88 @@
+.basic-page-body{
+	background-image: url("analytics.png");
+}
+.btns-container{
+	float:right;
+	position: relative;
+	top:15em;
+	margin-right: 7em;
+	width: 300px;
+}
+.btn-signIn{
+	position: relative;
+	background : none;
+	border: 1px solid #fff;
+	color: #fff;
+	margin: 1em;
+	width: 100%;
+}
+.btn-signIn:hover{
+	border: 1px solid #cfc;
+	color: #cfc;
+}
+.btn-signIn:active{
+	border: 1px solid #cfc;
+	color: #cfc;
+}
+
+.btn-signIn:focus{
+	outline: 5px auto #cfc;
+	color: #cfc;
+}
+
+.signUpForm{
+	position: relative;
+	margin: auto;
+	width: 500px;
+	height: 550px;
+	top:1em;
+	background-color: #e7e7e7;
+	opacity: 0.9;
+	padding: 2em;
+	margin-bottom: 0.5em;
+}
+.signUpCheckBox{
+	margin: 1em;
+	padding: 1em;
+}
+
+.signInForm{
+	position: relative;
+	margin: auto;
+	width: 500px;
+	height: 350px;
+	top:10em;
+	background-color: #e7e7e7;
+	opacity: 0.9;
+	padding: 2em;
+}
+.signInFormControls{
+	margin: 1em;
+	padding: 1em;
+	background-color: #fff;
+}
+.signInGlyphs{
+	background :none;
+	border: none;
+}
+.signInInputControl{
+	border: none;
+	box-shadow: none;
+}
+.signInInputControl:focus{
+	border: none;
+	box-shadow: none;
+}
+.signInFormButton{
+	width: 100%;
+}
+
+.form-header{
+	color: #555;
+	font-size: 20px;
+	margin-left: 0.7em;
+}
+/*.keyIcon{
+	background-image: url("favicon.png");
+	background-repeat: no-repeat;
+}*/

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Basic Page</title>
+		<link rel="icon" href="favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="BasicPageStyles.css">
+		<script type="text/javascript" src="BasicPageBehaviour.js"></script>
+	</head>
+	<body class="basic-page-body" ng-app="myApp" ng-controller="myCtrl" >
+		<div class="container btns-container">
+			<button class="btn btn-lg btn-signIn"> Sign in via Git hub</button>
+			<button class="btn btn-lg btn-signIn" ng-click="toggleSignInForm()"> Sign in</button>
+			<button class="btn btn-lg btn-signIn" ng-click="toggleSignUpForm()"> Sign up</button>
+		</div>
+		<div class="container" id="SignIn" ng-show="isSignInFormVisible">
+			<form class="signInForm">
+				<div class="col-md-offset-11" style="text-align:right">
+					<span class="glyphicon glyphicon glyphicon-remove" style="Cursor:Pointer" ng-click="toggleSignInForm()"></span>
+				</div>
+				<div class="form-header">
+					Sign In
+				</div>
+				<div class="input-group signInFormControls">
+				  <span class="input-group-addon glyphicon glyphicon-user signInGlyphs" ></span>
+				  <input type="text" class="form-control signInInputControl" placeholder="Username" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group signInFormControls">
+				  <span class="input-group-addon glyphicon glyphicon-lock signInGlyphs" ></span>
+				  <input type="password" class="form-control signInInputControl" placeholder="Password" aria-describedby="basic-addon1">
+				</div>
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6" style="padding:1em">
+					<button class="btn btn-primary btn-lg signInFormButton" > Sign In </button>
+				</div>
+			</form>
+		</div>
+		<div class="container" id="SignUp" ng-show="isSignUpFormVisible">
+			<form class="signUpForm">
+				<div class="col-md-offset-11" style="text-align:right">
+					<span class="glyphicon glyphicon glyphicon-remove" style="Cursor:Pointer" ng-click="toggleSignUpForm()"></span>
+				</div>
+				<div class="form-header">
+					Sign Up
+				</div>
+				<div class="input-group signInFormControls">
+				  <span class="input-group-addon glyphicon glyphicon-user signInGlyphs" ></span>
+				  <input type="text" class="form-control signInInputControl" placeholder="Username" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group signInFormControls">
+				  <span class="input-group-addon glyphicon glyphicon-envelope signInGlyphs" ></span>
+				  <input type="email" class="form-control signInInputControl" placeholder="Email address" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group signInFormControls">
+				  <span class="input-group-addon glyphicon glyphicon-lock signInGlyphs" ></span>
+				  <input type="password" class="form-control signInInputControl" placeholder="Password" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group signInFormControls">
+				  <span class="input-group-addon glyphicon glyphicon-lock signInGlyphs" ></span>
+				  <input type="password" class="form-control signInInputControl" placeholder="Confirm Password" aria-describedby="basic-addon1">
+				</div>
+				<div class="checkbox signUpCheckBox">
+				  <label><input type="checkbox" value="">I agree to Company's Website Terms, Privacy Policy and Licensing Terms.</label>
+				</div>
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-6" style="padding:1em">
+					<button class="btn btn-primary btn-lg signInFormButton" > Sign Up </button>
+				</div>
+			</form>
+		</div>
+		
+	</body>
+</html>
